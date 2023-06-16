@@ -6,15 +6,15 @@ import org.junit.Test;
 
 import java.sql.Timestamp;
 
-public class add {
+public class TestUser {
 
     @Test
-    public void addUserTest(){
+    public void add(){
 
         User user = new User();
-        user.setName("Vilson");
-        user.setEmail("vilson@outlook.com.br");
-        user.setPassword("admin");
+        user.setName("Marcos");
+        user.setEmail("marcosrodrigues@outlook.com.br");
+        user.setPassword("amigo");
         user.setCreationDate(new Timestamp(System.currentTimeMillis()));
 
         UserDAO dao = new UserDAO();
